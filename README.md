@@ -52,11 +52,11 @@ Array.prototype.to[Object|Map](keyFromElement[, valueFromElement[, startingDicti
 
 ...where `valueFromElement` defaults to `element=>element` and `startingDictionary` defaults to an empty new `Object` or `Map`, if not provided.
 
-# Why an optional `valueFromElement`?
+# Why an optional value callback?
 
 If the required dictionary value for each element is not the element itself, e.g. if I have an array of ids from which I need to page into another dictionary to get the values, I can use this to tersely construct my required dictionary.
 
-# Why an optional `startingDictionary`?
+# Why an optional starting object or map?
 
 If I am collecting array data in separate batches, and I want to cache the data to the same dictionary each time, I can use this to tersely add to an existing dictionary instead of having to merge them separately.
 
