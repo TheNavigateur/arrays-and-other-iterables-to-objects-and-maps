@@ -47,16 +47,16 @@ const elementsById = elements.toMap(element=>element.id)
 The full signature in this proposal includes, in addition to the key callback, an optional value callback and optional starting object or map, for completeness, and is as follows:
 
 ```javascript
-Array.prototype.to[Object|Map](keyFromElement[, valueFromElement[, startingObject|startingMap]])
+Array.prototype.to[Object|Map](keyFromElement[, valueFromElement[, startingDictionary]])
 ```
 
-...where `valueFromElement` defaults to `element=>element` and `startingObject`/`startingMap` defaults to an empty new `Object` or `Map`, if not provided.
+...where `valueFromElement` defaults to `element=>element` and `startingDictionary` defaults to an empty new `Object` or `Map`, if not provided.
 
 # Why an optional `valueFromElement`?
 
 If the required dictionary value for each element is not the element itself, e.g. if I have an array of ids from which I need to page into another dictionary to get the values, I can use this to tersely construct my required dictionary.
 
-# Why an optional `startingObject` / `startingMap`?
+# Why an optional `startingDictionary`?
 
 If I am collecting array data in separate batches, and I want to cache the data to the same dictionary each time, I can use this to tersely add to an existing dictionary instead of having to merge them separately.
 
@@ -67,7 +67,7 @@ The advantage of having this in the `Array` `prototype` is the ability to chain 
 However, for iterables in general, the following can be additionally exposed:
 
 ```javascript
-[Object|Map].fromIterable(iterable, keyFromElement[, valueFromElement[, startingObject|startingMap]])
+[Object|Map].fromIterable(iterable, keyFromElement[, valueFromElement[, startingDictionary]])
 ```
 
 Example usage:
