@@ -77,7 +77,7 @@ const elementsById = Object.fromIterable(iterable, element=>element.id)
 ```
 # By property name
 
-An addition is to allow a string to provided as the property name in place of `keyFromElement`. This can either be an overload in the same method or via separate methods `to[Object|Map]ByPropertyName` and `fromIterableByPropertyName`, which would otherwise have the same signature as their counterpart, e.g.:
+An addition is to allow a string to be provided as the property name in place of `keyFromElement`. This can either be an overload in the same method or via separate methods `to[Object|Map]ByPropertyName` and `fromIterableByPropertyName`, which would otherwise have the same signature as their counterpart, e.g.:
 
 ```javascript
 const elementsById = elements.toObjectByPropertyName('id')
@@ -100,7 +100,7 @@ const elementsById =
    )
 ```
 
-However, this is not necessarily preferable even over the already available `reduce` way of doing it, let alone the proposed way, because it creates memory pressure that may not be wanted in the case of large volumes of data.
+However, this is not necessarily preferable even over the already available `reduce` way of doing it, let alone the proposed way, because internally it requires an extra iteration step and creates memory pressure that may not be wanted in the case of large volumes of data.
 
 In addition, it is not yet clear what use cases `Object.fromEntries` would fit besides the stated ones, and for the stated use cases it is more verbose to use than the proposed approach, and without adding any additional control.
 
