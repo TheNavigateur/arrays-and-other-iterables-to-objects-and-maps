@@ -4,7 +4,7 @@ This proposal (hopefully) satisfies all of the requirements outlined in the disc
 
 # Existing way
 
-Caching typical array content in an object for quick access to its elements by one of an element's property values is currently best achieved as follows:
+Caching typical array content in an object for quick access to its elements by one of an element's property values can currently be achieved as follows:
 
 ```javascript
 const elementsById =
