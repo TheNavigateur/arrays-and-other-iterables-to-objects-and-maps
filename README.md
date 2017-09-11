@@ -1,11 +1,17 @@
 # Arrays and other iterables to objects and maps
 
-Proposed methods:
+Main proposed methods:
 
 - `Array.prototype.toObject`
 - `Array.prototype.toMap`
+
+Complementary proposed methods:
+
 - `Object.fromIterable`
 - `Map.fromIterable`
+
+Proposed complementary convenience methods:
+
 - `Array.prototype.toObjectByPropertyName`
 - `Array.prototype.toMapByPropertyName`
 - `Object.fromIterableByPropertyName`
