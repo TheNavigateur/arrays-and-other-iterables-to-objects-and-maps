@@ -60,7 +60,7 @@ If the required dictionary value for each element is not the element itself, e.g
 
 If I am collecting array data in separate batches, and I want to cache the data to the same dictionary each time, I can use this to tersely add to an existing dictionary instead of having to merge them separately.
 
-# Static `Object.fromIterable` and `Map.fromIterable`
+# Static `fromIterable`
 
 The advantage of having this in the `Array` `prototype` is the ability to chain this after array transformation methods (like `filter` etc.).
 
