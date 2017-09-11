@@ -1,4 +1,15 @@
-# Array `toObject` and `toMap`
+# Arrays and other iterables to objects and maps
+
+Proposed methods:
+
+- `Array.prototype.toObject`
+- `Array.prototype.toMap`
+- `Object.fromIterable`
+- `Map.fromIterable`
+- `Array.prototype.toObjectByPropertyName`
+- `Array.prototype.toMapByPropertyName`
+- `Object.fromIterableByPropertyName`
+- `Map.fromIterableByPropertyName`
 
 This proposal (hopefully) satisfies all of the requirements outlined in the discussion here: https://esdiscuss.org/topic/array-prototype-toobjectbyproperty-element-element-property
 
