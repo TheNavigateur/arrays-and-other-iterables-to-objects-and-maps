@@ -1,6 +1,6 @@
 # Arrays and other iterables to objects and maps
 
-Main proposed methods:
+Primary proposed methods:
 
 - `Array.prototype.toObject`
 - `Array.prototype.toMap`
