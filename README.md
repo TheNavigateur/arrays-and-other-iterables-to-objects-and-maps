@@ -4,8 +4,10 @@ Proposed methods:
 
 - `Array.prototype.toObject`
 - `Array.prototype.toMap`
+
 - `Object.fromIterable`
 - `Map.fromIterable`
+
 - `Array.prototype.toObjectByPropertyName`
 - `Array.prototype.toMapByPropertyName`
 - `Object.fromIterableByPropertyName`
