@@ -5,15 +5,6 @@ Main proposed methods:
 - `Array.prototype.toObject`
 - `Array.prototype.toMap`
 
-Complementary proposed methods:
-
-- `Object.fromIterable`
-- `Map.fromIterable`
-- `Array.prototype.toObjectByPropertyName`
-- `Array.prototype.toMapByPropertyName`
-- `Object.fromIterableByPropertyName`
-- `Map.fromIterableByPropertyName`
-
 This proposal (hopefully) satisfies all of the requirements outlined in the discussion here: https://esdiscuss.org/topic/array-prototype-toobjectbyproperty-element-element-property
 
 # Existing way
