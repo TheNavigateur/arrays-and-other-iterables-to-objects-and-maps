@@ -10,7 +10,7 @@ Complementary proposed methods:
 - `Object.fromIterable`
 - `Map.fromIterable`
 
-Proposed complementary convenience methods:
+Complementary proposed convenience methods:
 
 - `Array.prototype.toObjectByPropertyName`
 - `Array.prototype.toMapByPropertyName`
